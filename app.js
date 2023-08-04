@@ -51,12 +51,9 @@ document.onvisibilitychange = () => handleSoundToggle(false);
 
 paper.onclick = () => handleSoundToggle();
 
-const getFileName = index => {
-  
-  return `${settings.instrument}/${index}`;
-}
+const getFileName = index => `${settings.instrument}/${index}`;
 
-const getUrl = index => `./sounds/${getFileName(index)}.wav`;
+const getUrl = index => `https://polyrhythmic-spiral.s3.amazonaws.com/sounds/${getFileName(index)}.wav`;
 
 const keys = colors.map((_, index) => {
   const audio = new Audio(getUrl(index));
