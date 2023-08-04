@@ -38,7 +38,7 @@ const settings = {
   maxCycles: Math.max(colors.length, 100), // Must be above colors.length or else...
   soundEnabled: false, // User still must interact with screen first
   pulseEnabled: true, // Pulse will only show if sound is enabled as well
-  instrument: "piano" // "piano"
+  instrument: "piano" // Just "piano" for now. Instruments to be added.
 }
 
 const handleSoundToggle = (enabled = !settings.soundEnabled) => {  
