@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  font-family: Roboto, sans-serif;
+}
+
+#paper {
+  height: 100vh;
+  width: 100vw;
+}
+
+#instructions {
+  color: rgb(184, 184, 184);
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fade-in-out 10s linear 1 forwards;
+}
+
+#sound-button {
+  color: rgb(184, 184, 184);
+  position: absolute;
+  right: 0;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
